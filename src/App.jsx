@@ -1,11 +1,16 @@
-import { ClientSession } from "mongodb";
-import { useState } from "react";
+import React from "react";
+import Header from "../src/components/Header.jsx";
+import LoginForm from "../src/components/LoginForm.jsx";
+import Footer from "../src/components/Footer.jsx";
 
-
-export const App = () => {
-const initialState = 0;
-const  [CountQueuingStrategy,setCounter] = useState(initialState)
-
-
-
+function App() {
+  return (
+    <div>
+      <Header />
+      <LoginForm />
+      <Footer />
+    </div>
+  );
 }
+
+export default App;

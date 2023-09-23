@@ -1,7 +1,7 @@
 /* ESTILO DE LA LANDING PAGE */
 
 .landing {
-  background-image: url(../img/landing.png);
+  background-image: url(../src/assets/landing.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;

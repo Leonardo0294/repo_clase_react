@@ -1,21 +1,17 @@
 import React from "react";
 import "../css/main.css";
-function MainContent() {
-  const mainStyle = {
-    backgroundImage: 'url("../src/assets/landing.png")', // Reemplaza con la ruta de tu imagen
-    backgroundSize: "cover",
-    /* Otras propiedades de estilo según sea necesario */
-  };
 
+function MainContent() {
+    
   return (
-    <main style={mainStyle}>
-      <div className="container">
-        <div className="row justify-content-end">
-          <div className="col-md-6">
+    <div className="landing">
+      <main>
+        <article className="mx-auto p-4">
+          <div className="mx-4">
             <h1 className="text-left py-2 text-decoration-underline">
               ¿Quiénes somos?
             </h1>
-            <p className="rounded-2 text-center py-4 custom-bg">
+            <p className="rounded-2 float-left w-50 text-center py-4 custom-bg">
               Job Unite es una plataforma especializada en brindar apoyo a
               jóvenes recién graduados en la búsqueda de su primera experiencia
               laboral. Nuestro objetivo principal es conectar a estos jóvenes
@@ -27,15 +23,29 @@ function MainContent() {
               establecer contactos con empresas y destacar sus habilidades y
               logros.
             </p>
-            <div className="text-center">
-              <a href="mas-info" className="btn btn-primary">
+            <div className="py-4 mx-5">
+              <a
+                href="mas-info"
+                className="btn btn-primary py-4"
+                style={{ marginLeft: "28vh" }}
+              >
                 Más información
               </a>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </article>
+      </main>
+
+      <footer className="mt-auto text-black-50 text-center colorPrincipal fixed-bottom">
+        <p className="text-light">
+          © Copyright by:{" "}
+          <a href="#" className="text-light">
+            @JobUniteContact
+          </a>
+          .
+        </p>
+      </footer>
+    </div>
   );
 }
 
